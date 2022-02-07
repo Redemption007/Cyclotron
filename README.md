@@ -34,4 +34,5 @@ FL = qv ∧ B (force de Lorentz)
 • ~B(Bx=0,By=0,Bz=1,5T), ~E(Ex=0,Ey=5 · 103V,Ez=0), m =
 1, 67·10−27kg, q = 1, 6 · 10−19C.
 
-### Etude : • Etude de l’accélération de particules soumises à des champs électriques et magnétique
+### Etude :
+    • Etude de l’accélération de particules soumises à des champs électriques et magnétique
