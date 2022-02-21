@@ -37,7 +37,12 @@ FL = qv ∧ B (force de Lorentz)
     • Etude de l’accélération de particules soumises à des champs électriques et magnétique
     
 # Structure du code :
-- fichiers de données exportées
+- fichiers de données exportées :
+    • positions limites
+    • conditions initiales
+    • données modifiables
 - fichiers des fonctions générales
+    • forces
+    • 
 - fichiers des variations (fonctions bonus)
 - fichier main
