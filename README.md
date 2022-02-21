@@ -38,15 +38,26 @@ FL = qv ∧ B (force de Lorentz)
     
 # Structure du code :
 - fichiers de données exportées :
+
     • positions limites
+
     • conditions initiales
+
     • données modifiables
+
 - fichiers des fonctions générales
+
     • forces
+
     • accélération
+
 - fichiers des variations (fonctions bonus)
+
     • de phase
+
     • d'amplitude
+
     • de champ
+
     • de potentiel
 - fichier main : 
