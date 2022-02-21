@@ -6,3 +6,4 @@
 
 Peut être intéressant :
 - [Vidéo CEA](https://www.cea.fr/multimedia/Pages/videos/culture-scientifique/technologies/cyclotron.aspx)
+- [Exercices types](http://physik.diekirch.org/1er/A05%20Mouvement%20dans%20B.pdf)
