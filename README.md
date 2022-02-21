@@ -45,6 +45,7 @@ FL = qv ∧ B (force de Lorentz)
 - fichiers des fonctions générales
 > forces ;
 > accélération ;
+> trajectoire ;
 
 - fichiers des variations (fonctions bonus)
 > de phase ;
@@ -52,3 +53,5 @@ FL = qv ∧ B (force de Lorentz)
 > de champ ;
 > de potentiel ;
 - fichier main : 
+> tracé de la trajectoire ;
+> options modifiables ;
