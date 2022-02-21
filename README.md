@@ -39,8 +39,7 @@ FL = qv ∧ B (force de Lorentz)
 # Structure du code :
 - fichiers de données exportées :
 
-    • positions limites
-
+    > positions limites
     • conditions initiales
 
     • données modifiables
