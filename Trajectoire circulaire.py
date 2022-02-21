@@ -1,8 +1,11 @@
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 
+def c_traj (R, v, m, B, q) :
+  #intégration numérique à faire
+  
+  
+  
 theta = np.linspace(0, 2*np.pi, 100)
 
 r = np.sqrt(1.0)
