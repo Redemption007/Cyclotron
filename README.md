@@ -43,6 +43,10 @@ FL = qv ∧ B (force de Lorentz)
     • données modifiables
 - fichiers des fonctions générales
     • forces
-    • 
+    • accélération
 - fichiers des variations (fonctions bonus)
-- fichier main
+    • de phase
+    • d'amplitude
+    • de champ
+    • de potentiel
+- fichier main : 
