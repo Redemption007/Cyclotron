@@ -26,36 +26,37 @@ R, de leur charge q, du champ magnétique ~B et de sa masse m telle
 que : v = q| B|R
 m
   ⊲ la force que peut subir une particule chargée de charge q et
-de vitesse v lorsqu’elle est soumise à un champ magnétique B :
+de vitesse v lorsqu’elle est soumise à un champ magnétique B :\
 FL = qv ∧ B (force de Lorentz)
 
 • Calcul du nombre total de tours que doivent effectuer les particules pour atteindre une énergie cinétique E.
 # Données d’entrée :
-    • ~B(Bx=0,By=0,Bz=1,5T), ~E(Ex=0,Ey=5 · 103V,Ez=0), m = 1, 67·10−27kg, q = 1, 6 · 10−19C.
+    B(Bx=0,By=0,Bz=1,5T),
+    E(Ex=0,Ey=5·103V,Ez=0),
+    m = 1,67·10−27kg,
+    q = 1,6·10−19C.
 
 ### Etude :
     • Etude de l’accélération de particules soumises à des champs électriques et magnétique
     
 # Structure du code :
-- fichiers de données exportées :
-> positions limites ;
-> conditions initiales ;
-> données modifiables ;
 
 - fichiers des fonctions générales
-> forces ;
-> accélération et trajectoire ;
+> forces ;\
+> accélération et trajectoire ;\
 
 - fichiers des variations (fonctions bonus)
-> de phase ;
-> d'amplitude ;
-> de champ ;
-> de potentiel ;
-- fichier main : 
-> tracé de la trajectoire ;
-> options modifiables ;
+> de phase ;\
+> d'amplitude ;\
+> de champ ;\
+> de potentiel ;\
+> de vitessse initiale ;\
+- fichier main :
+> contient la position initiale ;\
+> tracé de la trajectoire ;\
+> options modifiables ;\
 
 # Modules :
-- sympy (résolution des équations)
-- tkinter (graphisme, modélisation)
-- modules de données personnalisés (fichiers de données, fonctions bonus ou optionnelles)
+- sympy (résolution des équations)\
+- tkinter (graphisme, modélisation)\
+- modules de données personnalisés (fichiers de données, fonctions bonus ou optionnelles)\
