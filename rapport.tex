@@ -19,13 +19,24 @@
 \vspace*{0.5cm}  
 \centerline{\LARGE X22P050 : Modélisation pour Physique  2 }  
 \vspace*{0.5cm}  
-\noindent{\bf DANREE Fabien et MORIN Baptiste }
-\\
+\right{\bf\Large DANREE Fabien et MORIN Baptiste }
+
 \centerline{\bf\Large Accélérateur de particules }
 \vspace*{2cm}
 \noindent
 
 \section*{Résumé :}
 
+Nous étudierons l’accélération de particules soumises à des champs électriques et magnétiques
+
+
+Nous suivrons la structure du code suivante : tout d'abord, nous modulerons notre code en plusieurs fichiers :
+Un pour les forces, un autre pour l'accélération et la trajectoire, un pour toute les variations que nous aimerions implémenter dans notre code ( phase, amplitude, champ, potentiel, vitessse initiale, masse ) et enfin un fichier main, contenant entre autres la position initiale qui ne changera pas, qui fera appel aux différentes fonctions et prendra en compte les options modifiables, pour enfin se charger de toute la sortie en écran utilisateur.
+
+Nous utiliserons principalement deux modules Python : Sympy, pour la résolutions des équations et l'intégration numérique, et tkinter pour les graphismes, et la modélisation des graphes.
+\paragraph{Pourquoi cette structure ?}
+Nous pourrons ainsi utiliser indépendamment les uns des autres les fonctions que nous désirons. De plus, aucun fichier ne fera ainsi plus de 200 lignes, ce qui sera plus simple à stocker et à débugguer. Aussi, nous pourrons isoler plus facilement les problèmes qui surviennent, et ainsi y faire face plus efficacement. Pour finir, cette structure permettrait aussi, dans le cadre d'un projet plus grand, de pouvoir utiliser des fonctions précises sans devoir importer tout un code qui se révèlerait alors plus lent.
+
+Les seuls désavantages de cette structure seront que les appels aux fichiers qui seront démultipliés, et risquent de ralentir le processus s'ils sont répétitifs ou mal organisés.
 
 \end{document}
