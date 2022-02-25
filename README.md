@@ -50,13 +50,17 @@ FL = qv ∧ B (force de Lorentz)
 > d'amplitude ;\
 > de champ ;\
 > de potentiel ;\
-> de vitessse initiale ;
+> de vitessse initiale ;\
+> de masse ;
+
 - fichier main :
 > contient la position initiale ;\
 > tracé de la trajectoire ;\
-> options modifiables ;
+> options modifiables ;\
+> appel aux fichiers et modules ;\
+> affichage en sortie ;
 
 # Modules :
-- sympy (résolution des équations)
-- tkinter (graphisme, modélisation)
-- modules de données personnalisés (fichiers de données, fonctions bonus ou optionnelles)
+- [sympy](https://docs.sympy.org/latest/index.html) (résolution des équations)
+- [tkinter](http://tkinter.fdex.eu/) (graphisme, modélisation)
+- modules de données personnalisés (fonctions principale ou optionnelles)
