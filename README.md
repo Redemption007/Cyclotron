@@ -55,3 +55,8 @@ FL = qv ∧ B (force de Lorentz)
 - fichier main : 
 > tracé de la trajectoire ;
 > options modifiables ;
+
+# Modules :
+- sympy (résolution des équations)
+- tkinter (graphisme, modélisation)
+- modules de données personnalisés (fichiers de données, fonctions bonus ou optionnelles)
