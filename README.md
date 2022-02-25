@@ -57,6 +57,6 @@ FL = qv ∧ B (force de Lorentz)
 > options modifiables ;
 
 # Modules :
-- sympy (résolution des équations)\
-- tkinter (graphisme, modélisation)\
+- sympy (résolution des équations)
+- tkinter (graphisme, modélisation)
 - modules de données personnalisés (fichiers de données, fonctions bonus ou optionnelles)
