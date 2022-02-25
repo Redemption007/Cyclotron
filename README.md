@@ -43,20 +43,20 @@ FL = qv ∧ B (force de Lorentz)
 
 - fichiers des fonctions générales
 > forces ;\
-> accélération et trajectoire ;\
+> accélération et trajectoire ;
 
 - fichiers des variations (fonctions bonus)
 > de phase ;\
 > d'amplitude ;\
 > de champ ;\
 > de potentiel ;\
-> de vitessse initiale ;\
+> de vitessse initiale ;
 - fichier main :
 > contient la position initiale ;\
 > tracé de la trajectoire ;\
-> options modifiables ;\
+> options modifiables ;
 
 # Modules :
 - sympy (résolution des équations)\
 - tkinter (graphisme, modélisation)\
-- modules de données personnalisés (fichiers de données, fonctions bonus ou optionnelles)\
+- modules de données personnalisés (fichiers de données, fonctions bonus ou optionnelles)
