@@ -45,7 +45,7 @@ FL = qv ∧ B (force de Lorentz)
 > forces ;\
 > accélération et trajectoire ;
 
-- fichiers des variations (fonctions bonus)
+- fichier des variations (fonctions bonus)
 > de phase ;\
 > d'amplitude ;\
 > de champ ;\
@@ -61,6 +61,6 @@ FL = qv ∧ B (force de Lorentz)
 > affichage en sortie ;
 
 # Modules :
-- [sympy](https://docs.sympy.org/latest/index.html) (résolution des équations)
+- [Sympy](https://docs.sympy.org/latest/index.html) (résolution des équations)
 - [tkinter](http://tkinter.fdex.eu/) (graphisme, modélisation)
 - modules de données personnalisés (fonctions principale ou optionnelles)
