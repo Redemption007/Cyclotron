@@ -6,12 +6,12 @@ Modélisation 2, Année L2 2022
 On considère un cyclotron destinée à la
 médecine nucléaire et à la recherche. Il est
 de forme circulaire et composé de deux
-”dees” comme représenté ci-contre. Les
-particules sont injectées au centre avec une
+”dees” comme représenté ci-contre.  
+Les particules sont injectées au centre avec une
 vitesse initiale, elles effectuent un certain
 nombre de tours en suivant une trajectoire en spirale durant lesquels elles sont
 accélérées et lorsqu’elles atteignent l’énergie
-nécessaire, elles sont extraites du cyclotron.
+nécessaire, elles sont extraites du cyclotron.  
 La trajectoire des particules est obtenue à l’aide de forces électromagnétiques. A
 chaque passage dans les zones 2 et 4, les particules sont accélérées en ligne droite
 tandis que dans les zones 1 et 3, leur trajectoire est circulaire uniforme.
@@ -20,11 +20,11 @@ tandis que dans les zones 1 et 3, leur trajectoire est circulaire uniforme.
 chargée de charge q lorsqu’elle est soumise à un champ électrique
 E : FC = q × E
 
-• Zone 1 et 3 : calcul de
+• Zone 1 et 3 : calcul de  
   ⊲ la vitesse v des particules en fonction de leur rayon de courbure
 R, de leur charge q, du champ magnétique ~B et de sa masse m telle
 que : v = q| B|R
-m
+m  
   ⊲ la force que peut subir une particule chargée de charge q et
 de vitesse v lorsqu’elle est soumise à un champ magnétique B :\
 FL = qv ∧ B (force de Lorentz)
