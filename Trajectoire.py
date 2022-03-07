@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import sympy as sp
 
 def trajectoire (R, v, m, B, q) :
   '''
@@ -8,6 +9,7 @@ def trajectoire (R, v, m, B, q) :
   L'idée est de faire fonctionner la fonction zone par zone afin de ne pas surcharger la mémoire vive avec la quantité de points à afficher.
   Ainsi les précédents points seront au fur et à mesure supprimés pour garder une vitesse correcte et ne pas créer de latence dans la simulation.
   '''
+  
   return null
 
 '''
