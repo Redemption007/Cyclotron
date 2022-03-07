@@ -1,5 +1,6 @@
 #Fichier de définition des forces, pour l'application de la deuxième loi de Newton
 def laplace(x_1, x_2, position_x, v, Bz, m, q) :
+  
   '''
   On définit ici l'intensité de la force de Laplace dans les dés à l'aide de plusieurs paramètres :
   - La position qui servira à savoir si la particule se trouve dans un dé ou non (x doit être entre x_1 et x_2 compris).
