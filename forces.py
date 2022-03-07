@@ -1,5 +1,6 @@
 #Fichier de définition des forces, pour l'application de la deuxième loi de Newton
 def laplace(x_1, x_2, position_x, v, Bz, m, q) :
+  R = (v*m)/(q*Bz) #rayon de courbure
   
   '''
   On définit ici l'intensité de la force de Laplace dans les dés à l'aide de plusieurs paramètres :
@@ -11,6 +12,7 @@ def laplace(x_1, x_2, position_x, v, Bz, m, q) :
   La fonction retournera l'unique force qui s'applique sur la particule.
   '''
   return null
+
 def champ(x_1, x_2, position_x, Ex, q, U) :
   if(position_x<x_1 or position_x>x_2)    #Si la particule n'est pas entre x_1 et x_2, cela signifie qu'elle est encore dans les dés
     return 0                              #Alors le champ est nul.
