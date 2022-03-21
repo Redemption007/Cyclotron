@@ -7,11 +7,11 @@ NOM :
     forces - Fichier de définition des forces, appelées pour l'application de la deuxième loi de Newton.
 
 FONCTIONS :
-    laplace(x_1, x_2, position_x, v, Bz, m, q)
+    laplace(position_x, v, Bz, m, q)
         Retourne la force de Laplace, calculée avec Bz, q et v, en fonction de la position_x de la particule. 
         Définition propre du rayon de courbure R, calculée avec v, m, q et Bz.
 
-    champ(x_1, x_2, position_x, Ex, q, U)
+    champ(position_x, Ex, q, U)
         Retourne la force du champ, calculée avec Bz, q et v, en fonction de la position_x de la particule. 
 """
 def laplace(position_x, v, Bz, m, q) :
