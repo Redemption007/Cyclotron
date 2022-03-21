@@ -1,5 +1,7 @@
 #
 import init #Fichier des valeurs initiales
+from sympy import Poly
+from sympy.abc import t
 """
 Aide du module forces :
 
@@ -18,8 +20,10 @@ def laplace(position_x, v) :
   R = (v*init.m)/(init.q*init.Bz) #rayon de courbure
   if (dir=="x"):
     #On retourne la composante x de la force
+    return Poly(force, t)
   if (dir=="y"):
     #On retourne la composante y de la force
+    return Poly(force, t)
   else:
     return error
   
