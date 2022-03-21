@@ -1,5 +1,6 @@
 #déclaration des variables
 import forces
+import trajectoire
 B(Bx=0,By=0,Bz=1,5T) #champ magnétique
 E(Ex=0,Ey=5·103V,Ez=0) #champ électrique
 m = 1,67·10−27 #masse de la particule (kg)
@@ -22,3 +23,5 @@ def main():
     On tracera dans le même temps la courbe de la vitesse : courbe en escalier, la norme est constante dans le dés,
     et augmente dans l'espace entre ces derniers.
   '''
+  traj_x, traj_y, norme_v = newton(forces.laplace(init.x0, init.v0, "x")+forces.champ(init.x0, U), forces.laplace(init.x0, init.v0, "y"))
+  #Cette ligne est à exécuter quand la particule change de milieu.
