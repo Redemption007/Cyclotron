@@ -5,11 +5,11 @@ import sympy as sp
 def newton(equation_x, equation_y) :
   a_x = sp.Poly(equation_x/m, t)
   a_y = sp.Poly(equation_y/m, t)
-  v_x = sp.Poly(a_x.integrate()+vx_init, t)
-  v_y = sp.Poly(a_y.integrate()+vy_init, t)
+  v_x = a_x.integrate()+vx_init            #Vérifier qu'un polynôme + une variable indépendante reste un polynôme
+  v_y = sa_y.integrate()+vy_init
   x = v_x.integrate()+x_init
   y = v_y.integrate()+y_init
-  norme = np.sqrt(v_x**2+x_y**2)
+  norme = np.sqrt(v_x**2+v_y**2)
   
   '''
   On rentre une fonction dedans, qui correspondra à l'accélération subie par la particule. On intègrera numériquement pour en ressortir la vitesse
