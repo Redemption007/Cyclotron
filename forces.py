@@ -1,4 +1,5 @@
 #
+import init
 """
 Aide du module forces :
 
@@ -7,12 +8,13 @@ NOM :
 
 FONCTIONS :
     laplace(x_1, x_2, position_x, v, Bz, m, q)
-        Retourne la force de Laplace, calculée avec Bz, q et v, en fonction de la position_x de la particule. Définition propre du rayon de courbure R, calculée avec v, m, q et Bz.
+        Retourne la force de Laplace, calculée avec Bz, q et v, en fonction de la position_x de la particule. 
+        Définition propre du rayon de courbure R, calculée avec v, m, q et Bz.
 
     champ(x_1, x_2, position_x, Ex, q, U)
         Retourne la force du champ, calculée avec Bz, q et v, en fonction de la position_x de la particule. 
 """
-def laplace(x_1, x_2, position_x, v, Bz, m, q) :
+def laplace(position_x, v, Bz, m, q) :
   R = (v*m)/(q*Bz) #rayon de courbure
   
   """
@@ -26,11 +28,12 @@ def laplace(x_1, x_2, position_x, v, Bz, m, q) :
   """
   return null
 
-def champ(x_1, x_2, position_x, Ex, q, U) :
-  if(position_x<x_1 or position_x>x_2)    #Si la particule n'est pas entre x_1 et x_2, cela signifie qu'elle est encore dans les dés
-    return 0                              #Alors le champ est nul.
-  F = float(Ex * q * U)                   #Sinon, on retourne la force exercée par le champ, multipliée par la tension pour accélerer la particule dans le bon sens.
-  print("F = ", F) #Log de vérification du code. A ENLEVER A LA FIN
+def champ(position_x, Ex, q, U) :
+  if(position_x<init.x_1 or position_x>init.x_2)     #Si la particule n'est pas entre x_1 et x_2, cela signifie qu'elle est encore dans les dés
+    return 0                                         #Alors le champ est nul.
+  F = float(Ex * q * U)                              #Sinon, on retourne la force exercée par le champ, multipliée par la tension
+                                                     #pour accélerer la particule dans le bon sens.
+  print("F = ", F)                                   #Log de vérification du code. A ENLEVER A LA FIN
   return F
   """
   Selon les mêmes paramètres, ainsi que la tension (qui permettra de savoir dans quel sens est accélérée la particule), 
