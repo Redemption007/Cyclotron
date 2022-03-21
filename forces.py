@@ -1,5 +1,5 @@
 #
-import init
+import init #Fichier des valeurs initiales
 """
 Aide du module forces :
 
@@ -15,7 +15,7 @@ FONCTIONS :
         Retourne la force du champ, calculée avec Bz, q et v, en fonction de la position_x de la particule. 
 """
 def laplace(position_x, v) :
-  R = (v*m)/(q*Bz) #rayon de courbure
+  R = (v*init.m)/(init.q*init.Bz) #rayon de courbure
   
   """
   On définit ici l'intensité de la force de Laplace dans les dés à l'aide de plusieurs paramètres :
@@ -28,10 +28,10 @@ def laplace(position_x, v) :
   """
   return null
 
-def champ(position_x, Ex, q, U) :
+def champ(position_x, U) :
   if(position_x<init.x_1 or position_x>init.x_2)     #Si la particule n'est pas entre x_1 et x_2, cela signifie qu'elle est encore dans les dés
     return 0                                         #Alors le champ est nul.
-  F = float(Ex * q * U)                              #Sinon, on retourne la force exercée par le champ, multipliée par la tension
+  F = float(init.Ex * init.q * U)                              #Sinon, on retourne la force exercée par le champ, multipliée par la tension
                                                      #pour accélerer la particule dans le bon sens.
   print("F = ", F)                                   #Log de vérification du code. A ENLEVER A LA FIN
   return F
