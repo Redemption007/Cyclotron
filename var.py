@@ -1,4 +1,4 @@
-from tkinter import * as tk
+#from tkinter import * as tk
 '''
 L'idée est de disposer de boutons réglables avec la souris à côté de la modélisation, pour voir l'influence des différents paramètres sur le système.
 Il y aura ainsi soint un continuum de valeurs possibles, soit seulement certaines valeurs prédéfinies (dans le cas de la masse par exemple).
@@ -11,15 +11,19 @@ def btn_phase():
 def amplitude():
   #bouton réglant le maximum et le minimum de tension atteints.
   return
-def champ():
+def magne():
   #bouton réglant l'intensité du champ électromagnétique dans les dés.
-  return
-def potentiel():
+  return 1,5
+def elec():
   #bouton réglant le potentiel des dés.
-  return
-def vitesse initiale():
+  return 5*10**3
+def v0():
   #bouton réglant la vitesse initiale de la particule.
-  return
-def masse():
+  return 0
+x0 =-40
+def m():
   #bouton réglant la masse de la particule.
-  return
+  return 1,67*10**-27
+def q():
+  #bouton réglant la charge de la particule.
+  return 1,6*10**-19

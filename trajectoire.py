@@ -1,16 +1,19 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import sympy as sp
+import forces
+import var
 
-def newton(equation_x, equation_y) :
-  a_x = sp.Poly(equation_x/m, t)
-  a_y = sp.Poly(equation_y/m, t)
-  v_x = a_x.integrate()+vx_init            #Vérifier qu'un polynôme + une variable indépendante reste un polynôme
-  v_y = sa_y.integrate()+vy_init
-  x = v_x.integrate()+x_init
-  y = v_y.integrate()+y_init
+def newton(v, U, des) :
+  t = sp.symbols('t')
+  if (des==True): a_x = forces.lorentz(v, "x")/var.m()
+  if (des==False): a_x = forces.champ(U)/var.m()
+  a_y = forces.lorentz(v, "y")/var.m()
+  v_x = sp.Add(a_x.integrate(t), var.v0())
+  v_y = a_y.integrate(t)
+  x = sp.Add(v_x.integrate(t) ,-var.x0)
+  y = v_y.integrate(t)
   norme = np.sqrt(v_x**2+v_y**2)
-  
+  time = sp.Add(x, var.x0).root(1)
   '''
   On rentre une fonction dedans, qui correspondra à l'accélération subie par la particule. On intègrera numériquement pour en ressortir la vitesse
   (qui sera affichée en sortie écran utilisateur dans un tableau) ainsi que la trajectoire, qui sera modélisée en sortie écran utilisateur dans un graphe.
@@ -18,7 +21,7 @@ def newton(equation_x, equation_y) :
   Ainsi les précédents points seront au fur et à mesure supprimés pour garder une vitesse correcte et ne pas créer de latence dans la simulation.
   '''
   
-  return x, y, norme
+  return x, y, norme, time
 
 '''
 Ici, un exemple de trajectoire circulaire pour pouvoir superposer les fonctions dans un premier temps et vérifier les intégrations des zones 2 et 4 (dans les dés)
